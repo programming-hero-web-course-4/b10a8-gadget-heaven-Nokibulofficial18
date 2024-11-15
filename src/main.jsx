@@ -8,6 +8,7 @@ import Home from "./components/Home"
 import Root from './components/Root';
 import ProductDetails from './components/ProductDetails';
 import Statistics from './components/Statistics';
+import Dashboard from './components/Dashboard';
 const router = createBrowserRouter([
 {
   path: "/",
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
     },{
       path: "/Statistics",
       element:<Statistics></Statistics>
-    }
+    },
+    {
+      path: "/Dashboard",
+      element:<Dashboard></Dashboard>
+    } 
   ]
 }]);
 
