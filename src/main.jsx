@@ -9,6 +9,7 @@ import Root from './components/Root';
 import ProductDetails from './components/ProductDetails';
 import Statistics from './components/Statistics';
 import Dashboard from './components/Dashboard';
+import About from './components/About';
 const router = createBrowserRouter([
 {
   path: "/",
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
     {
       path: "/Dashboard",
       element:<Dashboard></Dashboard>
+    },{
+      path: "/About",
+      element: <About></About>
     } 
   ]
 }]);
