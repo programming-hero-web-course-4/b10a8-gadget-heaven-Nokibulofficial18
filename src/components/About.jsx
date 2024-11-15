@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 
 const About = () => {
     return (
         <div className='container mx-auto flex flex-col items-center justify-center max-w-[900px]'>
+            <Helmet>
+                <title>Gadget Heaven | About Us</title>
+            </Helmet>
             <h1 className="font-bold text-3xl text-center mb-8">About Us</h1>
              {/* Mission Section */}
             <section className="mb-10 bg-[#9538E2] p-8 rounded-2xl text-white ">
