@@ -80,7 +80,11 @@ const Cart = () => {
                     <h1 className="font-bold text-2xl">Total Cost: ${cartItemPrice}</h1>
                     <button onClick={sortSelectedItemList} className='shadow-lg flex items-center gap-2 font-semibold border-2 border-[#9538E2] text-[#9538E2] px-3 py-2 rounded-full'>Sort By Price{" "} <FaSortAmountDown /></button>
                     <button onClick={openPaymentModal} disabled={cartItemList.length === 0} className={`font-medium rounded-full ${
-                    cartItemList.length === 0 ? "cursor-not-allowed" : "" } px-4 py-2 bg-[#9538E2] hover:bg-white hover:border-[1px] hover:border-[#9538E2] hover:text-[#9538E2] text-white`} > Purchase </button>
+                cartItemList.length === 0 ? "cursor-not-allowed" : ""
+            } px-4 py-2 bg-[#9538E2] hover:bg-white hover:border-[1px] hover:border-[#9538E2] hover:text-[#9538E2] text-white`}
+          >
+            Purchase
+          </button>
                 </div>
             </div>
             {selectedItem.length === 0 ? (
